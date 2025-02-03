@@ -59,7 +59,7 @@ MultiHeadAttentionLayer is modified by adding a attribute "att_mechnism". This i
 
 ## Web Application
 
-<img src="./images/a3_web.png" width="300"/>
+<img src="./images/a3_web.png" width="600" length="400"/>
 
 ## Conclusion
 
