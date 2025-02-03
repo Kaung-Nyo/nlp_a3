@@ -1,0 +1,44 @@
+version: '3.9'
+
+services:
+  dash:
+    # command: tail -f /dev/null
+    command: python3 main.py
+    image: kaungnyo/nlp-a3:v003
+    # image: 9094122df989
+    # platform: linux/x86_64
+    build: 
+      context: .
+      dockerfile: dash.Dockerfile
+    ports:
+      - 9999:80
+    volumes:
+      - ./app:/root/app
+      - ./.vscode-server:/root/.vscode-server
+    environment:
+      - HOST=0.0.0.0
+      - PORT=80
+
+# #      # This is important for asking Traefik to use your container.
+#     labels:
+#       # Allow Traefik to talk with your service
+#       - traefik.enable=true
+#       # Tell Traefik to use port 80
+#       - traefik.http.services.st125066-dash.loadbalancer.server.port=80
+#       # This config you domain name. By default, your subdomain is <service_name>-<folder_name>
+#       # If you which to change the subdomain name, you uncomment the below configuration
+#       # - traefik.http.routers.<service_name>-<folder_name>.rule=Host(`<subdomain>.ml2023.cs.ait.ac.th`)
+#       # Below is for enable SSL.
+#       - traefik.http.routers.st125066-dash.tls=true
+#       - traefik.http.routers.st125066-dash.tls.certresolver=production
+#       - traefik.http.routers.st125066-dash.entrypoints=websecure
+#     # This define network. You would need to keep it like this.
+#     networks:
+#       - default
+#       - traefik_default
+
+# # Keep it like this too.
+# networks:
+#   default:
+#   traefik_default:
+# #     external: true
