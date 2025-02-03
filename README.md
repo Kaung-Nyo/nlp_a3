@@ -31,8 +31,8 @@ MultiHeadAttentionLayer is modified by adding a attribute "att_mechnism". This i
 
 ## Training
 
-Epochs = 30 
-Learning rate = 0.001
+    Epochs = 30,
+    Learning rate = 0.001
 
 
 ## Model Comparison
