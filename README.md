@@ -57,6 +57,10 @@ MultiHeadAttentionLayer is modified by adding a attribute "att_mechnism". This i
 | <img src="./images/gen_map.png" width="300"/> | <img src="./images/mul_map.png" width="300"/> | <img src="./images/add_map.png" width="300"/> | 
 
 
+## Web Application
+
+<img src="./images/a3_web.png" width="300"/>
+
 ## Conclusion
 
 In terms of training time and validation loss, general attention got the best performance. However, the margins are relatively small. So, genreally, the attention mechanisms do not make a significant impact on perforamce and computaional complexity. This might be differnt for a larger corupus.
