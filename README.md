@@ -63,4 +63,4 @@ MultiHeadAttentionLayer is modified by adding a attribute "att_mechnism". This i
 
 ## Conclusion
 
-In terms of training time and validation loss, general attention got the best performance. However, the margins are relatively small. So, genreally, the attention mechanisms do not make a significant impact on perforamce and computaional complexity. This might be differnt for a larger corupus.
+In terms of training time, general attention got the best performance while multiplicative attention is slightly better in validation loss. However, the margins are relatively small. So, genreally, the attention mechanisms do not make a significant impact on perforamce and computaional complexity. This might be differnt for a larger corupus.
